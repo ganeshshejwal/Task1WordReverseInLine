@@ -29,11 +29,11 @@ public class ReverseWordsInLine {
         }
     }
 
-    private static String reverse(String s){
+    public static String reverse(String s){
         String[] arr = s.split(" ");
         StringBuilder sb = new StringBuilder();
         for(int i=0;i<arr.length;i++){
-            sb.append(reverseWord(arr[i])+" ");
+            sb.append(reverseWord(arr[i])+"");
         }
         return sb.toString().trim();
     }
